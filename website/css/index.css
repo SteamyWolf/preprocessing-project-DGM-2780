@@ -1,0 +1,340 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* Start your code here: */
+/* ----------- BODY ------------ */
+body {
+  background-color: #252629;
+  /* -----NAVIGATION ------ */
+  /* -----SECOND HERO SECTION ------ */
+  /* -----THIRD HERO SECTION ------ */
+  /* ----- FOURTH HERO SECTION ------ */
+}
+body #backgroundImg {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../images/backgroundImg1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  /* ------- HERO ------ */
+}
+body #backgroundImg .hero {
+  padding-left: 40px;
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body #backgroundImg .hero h1 {
+  font-size: 4rem;
+  color: white;
+  padding-bottom: 1rem;
+}
+body #backgroundImg .hero h3 {
+  font-size: 2rem;
+  color: white;
+}
+body #backgroundImg .hero button {
+  margin-top: 1rem;
+}
+body nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  background-color: #383636;
+  height: 60px;
+}
+body nav .firstBoxNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body nav .firstBoxNav li a {
+  color: white;
+}
+body nav .firstBoxNav li a:link {
+  text-decoration: none;
+}
+body nav .firstBoxNav li a:link img {
+  padding-right: 10px;
+  padding-left: 20px;
+  width: 80px;
+}
+body nav .firstBoxNav li a:link a:visited {
+  color: white;
+}
+body nav .secondBoxNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body nav .secondBoxNav li a {
+  color: white;
+}
+body nav .secondBoxNav li a:link {
+  text-decoration: none;
+  padding: 40px;
+}
+body nav .secondBoxNav li a:visited {
+  color: white;
+}
+body nav .lastBoxNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body nav .lastBoxNav a {
+  color: white;
+}
+body nav .lastBoxNav a:link {
+  text-decoration: none;
+  color: white;
+}
+body nav .lastBoxNav a:visited {
+  color: white;
+}
+body .secondGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 200px;
+  margin-left: 40px;
+  margin-bottom: 200px;
+}
+body .secondGrid .gridBox1 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+body .secondGrid .gridBox1 #second {
+  color: white;
+  padding-bottom: 20px;
+  font-size: 3rem;
+}
+body .secondGrid .gridBox1 .firstLabel {
+  padding-bottom: 10px;
+}
+body .secondGrid .gridBox1 .secondLabel {
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+body .secondGrid .gridBox1 #genre {
+  width: 150px;
+}
+body .secondGrid .gridBox1 #person {
+  width: 150px;
+}
+body .secondGrid .gridBox1 #submit {
+  width: 150px;
+  margin-top: 35px;
+}
+body .thirdGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+body .thirdGrid figure {
+  width: 60%;
+}
+body .thirdGrid figure img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+body .thirdGrid h2 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+body .thirdGrid p {
+  color: white;
+  margin-bottom: 50px;
+  text-align: center;
+}
+body .textAboveGrid4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .textAboveGrid4 h2 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+body .textAboveGrid4 p {
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+body .fourthGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-auto-rows: minmax(240px, auto);
+  justify-items: center;
+  grid-gap: 5px;
+}
+body .fourthGrid .card img {
+  width: 100%;
+}
+body .fourthGrid .one {
+  grid-column: 0.33333333;
+  grid-row: 0.2;
+}
+body .textAboveGrid5 h2 {
+  color: white;
+  font-size: 3rem;
+  margin-top: 70px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+body .textAboveGrid5 button {
+  color: black;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
