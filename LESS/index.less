@@ -132,6 +132,8 @@ table {
 
 html {
   box-sizing: border-box;
+  font-family: 'Baloo Chettan 2', cursive;
+
 }
 *,
 *:before,
@@ -141,7 +143,15 @@ html {
 
 /* Start your code here: */
 
+/* ----------- VARIABLES ------------ */
+
+@fontColor: white;
+
+
 /* ----------- BODY ------------ */
+* {
+  font-family: 'Baloo Chettan 2', cursive;
+}
 
 body {
   #backgroundImg {
@@ -163,14 +173,15 @@ body {
       justify-content: center;
       flex-wrap: wrap;
 
+
       h1 {
         font-size: 4rem;
-        color: white;
+        color: @fontColor;
         padding-bottom: 1rem;
       }
       h3 {
         font-size: 2rem;
-        color: white;
+        color: @fontColor;
       }
       button {
         margin-top: 1rem;
@@ -198,7 +209,7 @@ body {
 
       li {
         a {
-          color: white;
+          color: @fontColor;
         }
         a:link {
           text-decoration: none;
@@ -208,7 +219,7 @@ body {
             width: 80px;
           }
           a:visited {
-            color: white;
+            color: @fontColor;
           }
         }
       }
@@ -220,14 +231,14 @@ body {
 
       li {
         a {
-          color: white;
+          color: @fontColor;
         }
         a:link {
           text-decoration: none;
           padding: 40px;
         }
         a:visited {
-          color: white;
+          color: @fontColor;
         }
       }
     }
@@ -237,14 +248,14 @@ body {
       align-items: center;
       justify-content: space-evenly;
       a {
-        color: white;
+        color: @fontColor;
       }
       a:link {
         text-decoration: none;
-        color: white;
+        color: @fontColor;
       }
       a:visited {
-        color: white;
+        color: @fontColor;
       }
     }
   }
@@ -261,9 +272,9 @@ body {
     .gridBox1 {
       display: flex;
       flex-direction: column;
-      color: white;
+      color: @fontColor;
       #second {
-        color: white;
+        color: @fontColor;
         padding-bottom: 20px;
         font-size: 3rem;
       }
@@ -311,13 +322,13 @@ body {
       }
     }
     h2 {
-      color: white;
+      color: @fontColor;
       font-size: 3rem;
       margin-bottom: 10px;
       text-align: center;
     }
     p {
-      color: white;
+      color: @fontColor;
       margin-bottom: 50px;
       text-align: center;
     }
@@ -330,13 +341,13 @@ body {
     flex-direction: column;
     align-items: center;
     h2 {
-      color: white;
+      color: @fontColor;
       font-size: 3rem;
       margin-bottom: 10px;
       text-align: center;
     }
     p {
-      color: white;
+      color: @fontColor;
       text-align: center;
       margin-bottom: 40px;
     }
@@ -356,12 +367,11 @@ body {
     }
   }
 
-    /* ----- FIFTH HERO SECTION ------ */
-
+  /* ----- FIFTH HERO SECTION ------ */
 
   .textAboveGrid5 {
     h2 {
-      color: white;
+      color: @fontColor;
       font-size: 3rem;
       margin-top: 70px;
       margin-bottom: 10px;
@@ -379,8 +389,10 @@ body {
     grid-template-columns: repeat(3, 1fr);
     margin-left: 40px;
     margin-right: 40px;
-    grid-gap: 20px;;
-    .icon1, .icon2, .icon3 {
+    grid-gap: 20px;
+    .icon1,
+    .icon2,
+    .icon3 {
       img {
         width: 40px;
       }
@@ -389,7 +401,7 @@ body {
         margin-bottom: 10px;
         margin-top: 20px;
       }
-      color: white;
+      color: @fontColor;
     }
   }
   .video {
@@ -400,8 +412,38 @@ body {
     }
   }
 
+  /* ----- SIXTH HERO SECTION ------ */
 
-
-    /* ----- SIXTH HERO SECTION ------ */
-
+  .lowerHero {
+    figure {
+      width: 100vw;
+      height: 100vh;
+      background-image: url(/images/lowerHero.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: local;
+      background-size: cover;
+      img {
+        width: 100%;
+      }
+    }
+    span {
+      // text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        color: white;
+        font-size: 4rem;
+      }
+      p {
+        color: white;
+        margin-top: 20px;
+      }
+      button {
+        margin-top: 20px;
+      }
+    }
+  }
 }
